@@ -1086,6 +1086,22 @@ button {
 	gap: 21px;
 }
 
+.social__link path {
+	transition: fill 0.3s ease-in-out;
+}
+
+.social__link:hover path {
+	fill: var(--fullscreen-btn);
+}
+
+.social__link:focus path {
+	fill: var(--guest-link);
+}
+
+.social__link:active path {
+	fill: var(--color-active);
+}
+
 .footer__right {
 	display: flex;
 	gap: 109px;
@@ -1095,6 +1111,21 @@ button {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+}
+
+.right__link:hover:not(:focus-visible) {
+	color: var(--fullscreen-btn);
+}
+
+.right__link:focus,
+:focus-visible {
+	background-color: var(--fullscreen-btn);
+	color: var(--text-white);
+}
+
+.right__link:active:not(:focus-visible) {
+	background-color: transparent;
+	color: var(--color-active);
 }
 
 .footer_center-text {
