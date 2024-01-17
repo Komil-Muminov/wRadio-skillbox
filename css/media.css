@@ -1,45 +1,68 @@
 /* ------------------------------1024px------------------------------- */
 @media screen and (max-width: 1366px) {
-  /* Global  classes */
-  .container {
-    max-width: 1024px;
-  }
+	/* Header */
+	.header {
+		padding: 33px 0 22px 0;
+	}
 
-  /* Header  */
+	.header__content {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 33px;
+	}
 
-  .header__list {
-    order: 1;
-  }
-  .header__content svg {
-    flex-shrink: 0;
-  }
+	.header__list {
+		order: 2;
+		margin: 0;
+		gap: 105px;
+	}
 
-  .header__content {
-    flex-wrap: wrap;
-  }
+	/* Fullscreen */
+
+	.fullscreen_desc {
+		margin-bottom: 20px;
+	}
+
+	.fullscreen__microphone {
+		display: none;
+	}
+
+	/* Плейлисты */
+
+	.playlists__card {
+		display: flex;
+	}
+
+	.arthist__card {
+		height: 50%;
+		justify-content: center;
+	}
+
+	/* About */
+
+	.about_img {
+		display: none;
+	}
+
+	.about_img-2::before {
+		left: 30px;
+		max-width: 390px;
+	}
 }
 
-/* Fullscreen */
-
-.fullscreen__text {
-  margin-right: 121px;
-}
+/* With us */
 
 /* ------------------------------768px------------------------------- */
 
 @media screen and (max-width: 992px) {
-  /* Header */
-  .container {
-    max-width: 768px;
-  }
+	/* About */
+	.about_img {
+		display: block;
+	}
 }
 /* ------------------------------320px------------------------------- */
 
 @media screen and (max-width: 767px) {
-  .container {
-    /* max-width: 320px; */
-    padding: 0 15px;
-  }
 }
 
 /* Custom media */
