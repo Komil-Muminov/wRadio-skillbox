@@ -1,0 +1,50 @@
+/* ------------------------------1024px------------------------------- */
+@media screen and (max-width: 1366px) {
+  /* Global  classes */
+  .container {
+    max-width: 1024px;
+  }
+
+  /* Header  */
+
+  .header__list {
+    order: 1;
+  }
+  .header__content svg {
+    flex-shrink: 0;
+  }
+
+  .header__content {
+    flex-wrap: wrap;
+  }
+}
+
+/* Fullscreen */
+
+.fullscreen__text {
+  margin-right: 121px;
+}
+
+/* ------------------------------768px------------------------------- */
+
+@media screen and (max-width: 992px) {
+  /* Header */
+  .container {
+    max-width: 768px;
+  }
+}
+/* ------------------------------320px------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .container {
+    /* max-width: 320px; */
+    padding: 0 15px;
+  }
+}
+
+/* Custom media */
+
+/* ✅ Чтобы переместить меню на 320 как в макете, 
+используйте свойство order чтобы поместить его после поиска 
+и для меню пропишите width: 100%: а для родителя 
+flex-wrap: wrap; */
