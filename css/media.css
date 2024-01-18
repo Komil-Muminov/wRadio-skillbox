@@ -141,6 +141,14 @@
 		width: calc((100% - 30px) / 2);
 	}
 
+	/* Be with us */
+	.with__us-content {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 406px;
+	}
+
 	/* About */
 	.about_img {
 		display: block;
