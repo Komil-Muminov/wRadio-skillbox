@@ -1,12 +1,18 @@
 /* ------------------------------1024px------------------------------- */
 @media screen and (max-width: 1366px) {
+	/* Container */
+	.container {
+		max-width: 1024px;
+		padding: 0 100px;
+		margin: 0 auto;
+	}
 	/* Header */
 	.header {
 		padding: 33px 0 22px 0;
 	}
 
 	.header__content {
-		justify-content: center;
+		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 33px;
 	}
@@ -19,6 +25,9 @@
 
 	/* Fullscreen */
 
+	.fullscreen {
+		padding-bottom: 157px;
+	}
 	.fullscreen__content {
 		justify-content: center;
 		gap: 30px;
@@ -33,17 +42,43 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: left center;
-		max-width: 341px;
-		min-height: 305px;
+		max-width: 248px;
+		min-height: 269px;
 		background-size: contain;
 		bottom: 30px;
 		left: 56px;
 	}
 
+	/* Podcasts */
+	.podcast {
+		padding-bottom: 164px;
+	}
+
+	.podcast__list-item {
+		padding: 40px 79px 40px 142px;
+	}
+
+	/* Transfers */
+	.card__content {
+		width: calc((100% - 30px) / 2);
+	}
+
+	.guest_desc {
+		max-width: 536px;
+	}
+
 	/* Плейлисты */
+	.playlists__content {
+		flex-wrap: wrap;
+	}
 
 	.playlists__card {
 		display: flex;
+		width: calc((100% - 30px * 2) / 3);
+	}
+
+	.playlist_desc {
+		max-width: 824px;
 	}
 
 	.arthist__card {
@@ -52,6 +87,14 @@
 	}
 
 	/* About */
+
+	.about__list {
+		flex-wrap: wrap;
+	}
+
+	.about__item {
+		width: calc((100% - 30px) / 2);
+	}
 
 	.about_img {
 		display: none;
@@ -68,6 +111,36 @@
 /* ------------------------------768px------------------------------- */
 
 @media screen and (max-width: 992px) {
+	/* Header */
+
+	.header__list {
+		gap: 56px;
+	}
+
+	/* Fullscreen */
+	.fullscreen__microphone {
+		display: none;
+	}
+
+	/* Подкасты */
+	.podcast__list-item {
+		flex-basis: 100%;
+	}
+
+	/* Transfers */
+	.transfers__content {
+		flex-wrap: wrap;
+	}
+
+	.guest__content {
+		flex-wrap: wrap;
+	}
+
+	/* Плейлисты */
+	.playlists__card {
+		width: calc((100% - 30px) / 2);
+	}
+
 	/* About */
 	.about_img {
 		display: block;
