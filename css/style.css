@@ -345,7 +345,7 @@ button {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left center;
-	flex-basis: calc((100% - 30px) / 2);
+	width: calc((100% - 30px) / 2);
 	background-color: var(--text-white);
 	padding: 45px 142px;
 	position: relative;
@@ -651,7 +651,7 @@ button {
 }
 
 .guest__content:not(:last-child) {
-	margin-bottom: 45px;
+	margin-bottom: 50px;
 }
 
 .guest_profile {
@@ -674,7 +674,7 @@ button {
 	font-weight: 400;
 	line-height: 180%; /* 28.8px */
 	max-width: 458px;
-	/* margin-bottom: 85px; */
+	margin-bottom: 30px;
 }
 
 .guest_link {
@@ -826,9 +826,7 @@ button {
 	width: calc((100% - 30px) / 2);
 }
 
-.with_us-left::before {
-	content: "";
-	position: absolute;
+.with_us-left {
 	background-image: url("../img/be_with-us.png");
 	max-width: 640px;
 	width: 100%;
@@ -951,43 +949,48 @@ button {
 }
 
 .about__img-content {
-	position: relative;
 	display: flex;
 	gap: 30px;
 }
 
-.about_img::before {
-	content: "";
-	position: absolute;
-	background-image: url("../img/about-1.png");
-	max-width: 160px;
-	min-height: 191px;
-	background-repeat: no-repeat;
-	background-size: contain;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
+.about_img {
+	position: relative;
+	display: inline-flex;
 }
 
-.about_img-2::before {
-	content: "";
-	position: absolute;
+.about_img {
+	display: inline-flex;
+	background-image: url("../img/about-1.png");
+	width: 160px;
+	height: 290px;
+	opacity: 0.5;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about_img-2 {
+	display: inline-flex;
+	position: relative;
+}
+
+.about_img-2 {
 	background-image: url("../img/about-2.png");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top right;
 	max-width: 255px;
-	min-height: 291px;
-	left: 211px;
-	top: 0;
-	right: 0;
-	bottom: 0;
+	width: 255px;
+	height: 255px;
 }
 
 .about__list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
+}
+
+.about__item {
+	width: calc((100% - 30px * 3) / 4);
 }
 
 .about__text {
@@ -1025,6 +1028,11 @@ button {
 	font-weight: 400;
 	line-height: 24px; /* 150% */
 	max-width: 255px;
+}
+
+.form__conten {
+	display: flex;
+	gap: 30px;
 }
 
 .about__textarea {
@@ -1090,7 +1098,7 @@ button {
 }
 
 .about_btn {
-	display: flex;
+	display: block;
 	padding: 25px 54px;
 	background-color: var(--fullscreen-btn);
 	border-radius: 40px;
